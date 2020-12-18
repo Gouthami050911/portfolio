@@ -1,0 +1,594 @@
+<!Documenttype html>
+<html>
+<head>
+<title>Vishal 2</title>
+<script  src="jsMinified.js" > </script>
+<script src="jquery-ui.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+
+<style>
+    body{
+        margin: 0;
+        background-color: #696969;
+    }
+    .header{
+        /* background-color: #003152 ; */
+        /* rgb(14 77 146); */
+        background-color: black;
+        height: 50%;
+        width: 100%;
+        color: whitesmoke;
+    }
+
+    .profilephoto{
+        height: 100%;
+        width: 25%;
+        border-radius: 50%;
+        margin-left: 6%;
+        margin-top: 8%;
+    }
+
+    /* article{
+        background-color: #696969;
+       
+    } */
+
+    .name{
+        float: right;
+        margin-right: 5%;
+        font-style: italic;
+        font-size: 50px;
+    }
+
+    h3{
+        float: right;
+        margin-top: 8%;
+        margin-right: -26%;
+        font-size: 30px;
+        font-family: "Lucida Console", Courier, monospace;;
+    }
+
+  
+
+    h5{
+        float: right;
+        margin-top: 20%;
+        margin-right: -9%;
+    }
+
+    #phone{
+        margin-top: -11.65%;
+        margin-left: 35%;
+        font-size: 20px;
+    }
+   
+    #email{
+        margin-top: -11.7%;
+        margin-left: 48%;
+        font-size: 20px;
+    }
+
+    #home{
+        margin-top: -11.7%;
+        margin-left: 65%;
+        font-size: 20px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover{
+        color: 	#A9A9A9;
+    }
+
+
+    /* download button */
+
+    .downloadbtn {
+        background-color: DodgerBlue;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        padding: 12px 30px;
+        cursor: pointer;
+        font-size: 20px;
+        margin-left: 35%;
+        margin-top: 4%;
+    }
+
+    .downloadbtn:hover{
+        background-color: blue;     
+    }
+
+/* About */
+
+    .about,.expereince,.education{
+        
+        font-size: 40px;
+        color: rgb(238, 234, 14);
+        margin-top: 4%;
+        margin-left: 6%;    
+    }
+
+    #skill{
+        font-size: 40px;
+        color: rgb(238, 234, 14);
+        margin-top: 16%;
+        margin-left: 9%; 
+    }
+
+    .border3{
+        border-left: 3px solid rgb(238, 234, 14);
+        height: 150px;
+        margin-left: 3%; 
+    }
+    
+
+    .border{
+        border-left: 3px solid rgb(238, 234, 14);
+        height: 150px;
+        margin-left: 12%; 
+    }
+  
+    .aboutcontent{
+        font-size: 24px;
+        margin-left: 24%;
+        margin-right: 5%;
+        margin-top: -15%;
+        text-align: justify;
+        color: whitesmoke;
+    }
+/* About Ends */
+
+    .expcontent{
+        font-size: 24px;
+        margin-left: 24%;
+        margin-right: 5%;
+        text-align: justify;
+        margin-top: -16%;
+        color: whitesmoke;
+    }
+
+
+    .year{
+        font-size: 24px;
+        margin-left: 25%;
+        margin-top:  -2%;
+        border: 2px solid #696969;
+        border-color: #696969;
+        color:  rgb(238, 234, 14);
+        background-color: rgb(58, 56, 56);
+        width: 150px;
+        padding: 10px 5px 10px 25px;
+    }
+    span{
+        color:  rgb(238, 234, 14);
+    }
+
+    h1{
+        color: #FFFF00;
+    }
+
+    .border1, .border2{
+        border-left: 3px solid rgb(238, 234, 14);
+        height: 190px;
+        margin-left: 12%; 
+    }
+
+    .year2{ 
+        
+        font-size: 24px;
+        margin-left: 25%;
+        margin-top:  -17%;
+        border: 2px solid #696969;
+        border-color: #696969;
+        color:  rgb(238, 234, 14);
+        background-color: rgb(58, 56, 56);
+        width: 150px;
+        padding: 10px 5px 10px 25px;      
+    }
+
+    .year3{
+        font-size: 24px;
+        margin-left: 18%;
+        margin-top:  -18%;
+        border: 2px solid #696969;
+        border-color: #696969;
+        color:  rgb(238, 234, 14);
+        background-color: rgb(58, 56, 56);
+        width: 180px;
+        padding: 10px 15px 10px 20px; 
+           
+    }
+    
+
+    .year4{
+        font-size: 24px;
+        margin-left: 50%;
+        margin-top: -19.5%;
+        border: 2px solid #696969;
+        color:  rgb(238, 234, 14);
+        background-color: rgb(58, 56, 56);
+        width: 180px;
+        text-align: center;   
+        padding: 10px 15px 10px 20px;
+    }
+
+    .college, .Engcoll, .PUcoll{
+        font-size: 25px;
+        margin-left: 24%;
+        margin-right: 5%;
+        text-align: justify;       
+        color:  rgb(238, 234, 14);
+
+    }
+
+    em{
+        color: whitesmoke;
+    }
+
+    .studies{
+
+        font-size: 22px;
+        margin-left: 24%;
+        margin-right: 5%;
+        text-align: justify;
+        margin-top: -1%;
+        color: whitesmoke;
+    }
+ 
+    .secondyear{
+        margin-left: 38%;
+        margin-top: -22.1%;
+    }
+
+    .thirdyear{
+        margin-left: 75%;
+        margin-top: -16.9%;
+    }
+
+    .studies1{
+        font-size: 22px;
+        margin-left: 24%;
+        margin-right: 5%;
+        text-align: justify;
+        margin-top: -7%;
+        color: whitesmoke;
+    }
+    
+    ul{
+        font-size: 22px;
+        margin-left: 16%;
+        margin-right: 5%;
+        text-align: justify;
+        color: whitesmoke;
+        list-style-type: square;
+    }
+
+    .ownskills{
+        font-size: 22px;
+        margin-left: 50%;
+        margin-right: 5%;
+        text-align: justify;
+        color: whitesmoke;
+        list-style-type: square;
+    }
+
+    .achievements1{
+        margin-left: 8%;
+        margin-top: 5%;
+    }
+
+    .achievements2{
+        margin-right: 20%;
+    }
+
+    footer{
+        background-color: black ;
+        height: 40%;        
+        bottom: fixed;
+        width: 100%;
+        color: white;
+        
+    }
+
+
+    .icons{
+        display: flex;
+        
+    }
+    #connect{
+        margin-top: 5%;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+        /* icons styles */
+
+        /* facebook */
+
+    .fa-facebook {
+        background: black;
+        border: 1px solid gray;
+        color: white;
+        border-radius: 10%;
+        padding: 20px;
+        font-size: 30px;
+        width: 40px;
+        text-align: center;
+      
+    }
+
+    .fa-facebook:hover{
+        background: #39569C;
+        color: white; 
+    }
+
+
+    .fb{
+      margin-left: -20%;
+        font-size: 20px;
+    }
+
+    .fcb{
+        margin-left: 20%;
+    }
+
+        /* -------facebook ends -------------*/
+
+
+        /* linkedin */
+     .fa-linkedin {
+        background: black;
+        border: 1px solid gray;
+        color: white;
+        border-radius: 10%;
+        padding: 20px;
+        font-size: 30px;
+        width: 40px;
+        text-align: center;
+        margin-left: 30%;
+    }
+
+    .fa-linkedin:hover{
+        background: #0E76A8; 
+        color: white; 
+    }
+
+
+
+    .li{
+        margin-left: 8%;
+        font-size: 20px;        
+    }
+
+    /* ----------linedin ends---------------- */
+
+
+    /* -----------google----------- */
+    .fa-google {
+        background: black;
+        border: 1px solid gray;
+        color: white;
+        border-radius: 10%;
+        padding: 20px;
+        font-size: 30px;
+        width: 40px;
+        text-align: center;
+        margin-left: 25%;
+    }
+
+    .fa-google:hover{
+        background: #DB4437; 
+        color: white; 
+    }   
+
+    .google{
+        margin-left: 12%;
+        font-size: 20px;        
+    }
+
+    /* ---------google ends------------ */
+
+
+    /* -------insta-------------- */
+
+    .fa-instagram {
+        background: black;
+        border: 1px solid gray;
+        color: white;
+        border-radius: 10%;
+        padding: 20px;
+        font-size: 30px;
+        width: 40px;
+        text-align: center;
+        margin-left: 25%;
+    }
+
+    .fa-instagram:hover{
+        /* background: #f51808;  */
+        background: linear-gradient(to bottom right, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+        color: white; 
+    }   
+
+    .insta{
+        margin-left: 12%;
+        font-size: 20px;        
+    }
+
+
+
+</style>
+
+
+<body>
+
+    <!-- Header -->
+        <section>
+            <div class="header">
+                <img src="vishpp.jpg" class="profilephoto">
+                <h1 class="name">Vishal Anandamani</h1>
+                <h3>Software Engineer</h3>
+
+                <i class="fa fa-mobile" id="phone"> <a href="tel: +19702868383"> +19702868383</a> </i>
+                <i class="fa fa-envelope-o" id="email" aria-hidden="true"> <a href="mailto:vishal.a@colostate.edu">vishal.a@colostate.edu </a></i>
+                <i class="fa fa-home" aria-hidden="true"  id="home"> 1610 Westbridge Drive, Unit D17, Fort Collins, CO</i> 
+
+            </div>
+        </section>  
+    <!-- header ends -->
+
+
+    <div> 
+        <button class="downloadbtn"><i class="fa fa-download"></i> Download Resume</button>
+    </div>
+
+
+
+    <!-- Content1 About me -->
+            <div class="about">
+                <div> 
+                    <label class="about"> About me </label> 
+                        <p class="border">
+                            <p class="aboutcontent">  Vishal Anandamani is an graduate student at Colorado State University with a successfull track record overseeing in Software Development,
+                                Automation, Artificial Intelligence, Robotics and Machine Learning.
+                                My research is on providing efficient security mechanisms and resolve the security issues in web development field.
+                                Vishal Anandamani is an graduate student at Colorado State University with a successfull track record overseeing in Software Development,
+                                Automation, Artificial Intelligence, Robotics and Machine Learning.
+                                My research is on providing efficient security
+                            </p>
+                        </p>
+                </div>
+                
+        
+                <div>
+                    <label class="expereince"> Experience</label>
+                        <p class="year"> 2016-2019</p>
+                            <p class="border1">
+                                <p class="expcontent">
+                                        Software Engineer, <span> Quest Informatics Pvt Ltd </span>, Bangalore, Karnataka, India (3+ Years).
+                                        Work experience includes 1 year of intense training and 2 years of Full-Stack Web Application development with all the 
+                                        technologies mentioned in the “Skills-Full Stack Web Development” section. 
+                                        Extensive work experience in executing all phases of software life cycle starting with stake holder requirement gathering,
+                                        end to end development and documentation, unit testing, defect fixing, Hosting/Deployment.
+                                        Enhancing the application’s performance by performing query optimization and effective memory utilization techniques. 
+                        </p>
+                    </p>
+                </div>
+
+                <div>
+                    <label class="education">Education</label>
+                    <p class="border2"></p>
+
+                        <div class="eduinlineblock"> 
+                        <div>     
+                            <p class="year2">2019-2021 </p> 
+                                <p class="college"> Colorado State University <br> </p>
+                                <p class="studies">Master of Science in <br> Computer Science <br> Fort Collins, Colorado<br>
+                                    <span>Specialization:<em>  Artificial Intelligence, <br> Machine Learning  </em> </span><br>
+                                    <span> Expected: <em> May 2021 </em> <br>
+                                            GPA: <em> 3.5 </em>
+                                    </span>                                    
+                                </p>
+                        </div>
+                            
+                            <div class="secondyear"> 
+                                <p class="year2">2012-2016 </p>  
+                                <p class="Engcoll"> AIT College of Engineering </p> <br>
+                                <p class="studies1"> Bachelor of Engineering in <br> Electronics and Communication <br> Chikkmagaluru, Karnataka <br>
+                                <span>  Graduation: </span> <em> June 2016 </em>
+                                </p>                            
+                            </div>
+
+                            <div class="thirdyear">
+                                <p class="year2">2010-2012 </p> 
+                                <p class="PUcoll"> SBM Jain College </p>
+                                <p> </p>
+                            </div>
+                        </div>
+                </div>
+                
+
+                <div id="skill">
+                    <label class="skills"> Skills </label>
+                    <p class="border3"></p>
+                        <div> 
+                            <div class="Profskills">
+                                <p class="year3"> Proffesional Skills </p>
+
+                                    <ul class="languages">
+                                        <li> Deep Learning</li>
+                                        <li> Neural Networks</li>
+                                        <li> Phython, NumPy, Pandas <br>Matplotlib</li>
+                                        <li> PyTorch and TensorFlow</li>
+                                        <li>Full-Stack Development</li>
+                                    </ul>
+
+                            </div>
+
+                            <div class="PersonalSkills">
+                                <p class="year4">Personal Skills </p>
+                                    <ul class="ownskills">
+                                        <li>Work Ethic </li>
+                                        <li>Problem Solving </li>
+                                        <li>Willingness to Learn </li>
+                                        <li>Teamworking </li>  
+                                        <li>Adaptability </li>
+                                    </ul>
+                            </div>
+
+                        </div>                 
+                </div>
+
+
+                <div>
+                    <p class="achievements1"> Extra-curricular Activities </p>
+                        <ul class="achievements2">
+                            <li>Participated in two 24-hour Hackathons held at University of Colorado,
+                                Boulder and JNN College of Engineering, Shivamogga, India</li>
+
+                            <li> Participated in four national level technical paper presentation competitions
+                                and secured second place in one of them.</li>
+                        </ul>
+                </div>
+            </div>
+
+          
+
+            <footer>
+                <h1 id="connect"> Connect socially with me</h1>
+
+                <div class="icons">
+
+                    <div class="fcb">                        
+                        <a href="#" class="fa fa-facebook"></a>
+                        <p class="fb"> Follow on Facebook</p>
+                    </div> 
+                    
+                    <div class="li">                     
+                        <a href="https://www.linkedin.com/in/vishal-anandamani-62b17210b" class="fa fa-linkedin"></a>
+                        <p> Follow on Linkedin</p>
+                    </div>
+
+                     <div class="google">                        
+                        <a href="#" class="fa fa-google"></a>
+                        <p> Follow on Google</p>
+                    </div>
+
+
+                    <div class="insta">                        
+                        <a href="#" class="fa fa-instagram"></a>
+                        <p> Follow on instagram</p>
+                    </div>
+                </div>
+            </footer>
+
+</body>
+</html>
